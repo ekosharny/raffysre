@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+
+h1{
+	color: #006bb3;
+	font-family: Georgia, serif;
+	text-align: center;
+}
+
+h2{
+   color: #006bb3;
+   text-align: center;
+   font-family: Georgia, serif;
+   font-size: 30px;
+}
+
+h3{
+	color: #006bb3;
+   text-align: center;
+   font-family: Georgia, serif;
+   font-size: 15px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #006bb3;
+}
+
+.active {
+  background-color: #1aa3ff;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 110px;
+   background-color: #ccebff;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>RAFFY'S RESTAURANT EQUIPMENT</h1>
+
+<div class="container">
+	<ul class="nav nav-pills nav-justified">
+		<li class="active nav-item"><a href="home.html">Home</a></li>
+     	<li class="nav-item"><a href="refrigeration.html">Refrigeration</a></li>
+      	<li class="nav-item"><a href="ovens.html">Ovens</a></li>
+      	<li class="nav-item"><a href="grills.html">Grills</a></li>
+      	<li class="nav-item"><a href="dishwashers.html">Dishwashers</a></li>
+	</ul>
+</div>
+
+<br>
+
+		<div id="slideshow" class="carousel slide" data-ride="carousel">
+
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="Images/equip1.jpg" alt="equip1" width="900" height="300">
+				</div>
+				<div class="carousel-item">
+					<img src="Images/equip3.jpg" alt="equip3" width="900" height="300">
+				</div>
+
+
+			</div>
+
+			<a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+				<span class ="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#slideshow" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+
+
+<div class="footer">
+	<br>
+  <h2>CALL 1(718)666-5669</h2>
+  <h3>Mon-Fri: 7:00am - 6:00pm Sat: 8:00 am - 2:00 pm</h3>
+  <br>
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDMfkh1MwpBF9cKBFI9SgP8jHVv5Ia-snY",
+    authDomain: "raffy-s-equipment.firebaseapp.com",
+    databaseURL: "https://raffy-s-equipment.firebaseio.com",
+    projectId: "raffy-s-equipment",
+    storageBucket: "raffy-s-equipment.appspot.com",
+    messagingSenderId: "1084888406866",
+    appId: "1:1084888406866:web:59c1daf6835e66cc"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</body>
+</html>
