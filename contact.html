@@ -43,9 +43,12 @@
      <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown">Inventory</a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="inventory.html">Refrigerators</a>
-        <a class="dropdown-item" href="inventory.html">Freezers</a>
-        <a class="dropdown-item" href="inventory.html">Grills</a></div>
+        <a class="dropdown-item" href="refrigeration.html">Refrigeration/Freezers</a>
+        <a class="dropdown-item" href="inventory.html">Ice Machines</a>
+        <a class="dropdown-item" href="inventory.html">Food Preparation Equipment</a>
+        <a class="dropdown-item" href="inventory.html">Stoves/Ovens</a>
+        <a class="dropdown-item" href="inventory.html">Sinks/Tables</a>
+      </div>
     </li>
     <li class="nav-item">
       <a class="nav-link active" href="contact.html">Contact</a>
@@ -54,6 +57,35 @@
 </div>
 
   <br>
+  <br>
+  <h4>CONTACT US</h4>
+  <br>
+
+  <div id="contactus">
+    <p>Reach out if you have any questions or requests</p>
+    <br>
+    <p style="color:#006bb3;display:inline;">Address</p><p style="display:inline;"> - 2517 Mill Ave Brooklyn, NY 11234</p>
+    <br>
+    <p style="color:#006bb3;display:inline;">E-Mail</p><p style="display:inline;"> - raffy@raffysre.com</p>
+    <br>
+    <p style="color:#006bb3;display:inline;">Phone</p><p style="display:inline;"> - 1(718)666-5669</p>
+  </div>
+
+  <br>
+
+  <div id="googleMap" style="width:1000px;height:400px;margin-left:100px;"></div>
+
+  <script>
+  function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjahxDEstsrj01LjIUjMkKnTYKocArrhc&callback=myMap"></script>
 
   <script src="./app.js"></script>
 
