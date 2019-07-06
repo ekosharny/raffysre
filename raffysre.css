@@ -18,7 +18,7 @@ h3{
    font-size: 15px;
 }
 
-li a {
+li a.nav-link {
   color: black;
   text-align: center;
 }
@@ -62,6 +62,7 @@ li a:hover:not(.active) {
   text-align: left;
 }
 
+
 #contactus{
   margin-left: 100px;
   margin-right: 100px;
@@ -76,4 +77,21 @@ h4{
   border-color:#006bb3;
   font-family: Arial, sans-serif;
   text-align: center;
+}
+
+.content{
+    background: #fff;
+    max-width: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.listing-image{
+  width: 50%;
+  height: 50%;
 }
