@@ -1,18 +1,18 @@
 h1{
-	color: #006bb3;
+	color: #ed3434;
 	font-family: "Arial Black", Gadget, sans-serif;
 	text-align: center;
 }
 
 h2{
-   color: #006bb3;
+   color: black;
    text-align: center;
    font-family: "Arial Black", Gadget, sans-serif;
    font-size: 30px;
 }
 
 h3{
-	color: #006bb3;
+	color: black;
    text-align: center;
    font-family: Arial, sans-serif;
    font-size: 15px;
@@ -24,7 +24,7 @@ li a.nav-link {
 }
 
 li a:hover:not(.active) {
-  background-color: #006bb3;
+  background-color: #ed3434;
   color:black;
 }
 
@@ -42,7 +42,7 @@ li a:hover:not(.active) {
    bottom: 0;
    width: 100%;
    height: 110px;
-   background-color: #ccebff;
+   background-color: #ed3434;
 }
 
 .carousel-inner img {
@@ -59,7 +59,7 @@ li a:hover:not(.active) {
   margin-left: 100px;
   margin-right:100px;
   font-family: Arial, sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
 
@@ -67,14 +67,12 @@ li a:hover:not(.active) {
   margin-left: 100px;
   margin-right: 100px;
   font-family: Arial, sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
 h4{
   margin-left: 100px;
   margin-right: 100px;
-  border-bottom:dashed;
-  border-color:#006bb3;
   font-family: Arial, sans-serif;
   text-align: center;
 }
