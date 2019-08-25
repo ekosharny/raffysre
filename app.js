@@ -4,6 +4,7 @@ const foodprepList=document.querySelector('#foodprep-list');
 const stoveList=document.querySelector('#stove-list');
 const sinkList=document.querySelector('#sink-list');
 
+
 function renderFridges(doc){
 
 	let li = document.createElement('li');

@@ -45,9 +45,20 @@ li a:hover:not(.active) {
    background-color: #ed3434;
 }
 
-.carousel-inner img {
-	width: 100%;
-	height: 100%;
+.home-table{
+  display: grid;
+  grid-template-columns:auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.home-table > div{
+}
+
+.table-img img{
+  width:300px;
+  height:auto;
 }
 
 .dropdown-menu{
@@ -92,10 +103,6 @@ ul{
     grid-gap: 20px 40px;
 }
 
-.listing-image{
-  max-width:100%;
-  max-height: 100%;
-}
 
 .heading-div{
   height:60px;
