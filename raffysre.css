@@ -1,14 +1,17 @@
+/* Headings */
 h1{
 	color: #ed3434;
 	font-family: "Arial Black", Gadget, sans-serif;
 	text-align: center;
+  font-size:30px;
 }
 
 h2{
    color: black;
    text-align: center;
    font-family: "Arial Black", Gadget, sans-serif;
-   font-size: 30px;
+   font-size: 25px;
+   margin-top: 10px;
 }
 
 h3{
@@ -16,6 +19,45 @@ h3{
    text-align: center;
    font-family: Arial, sans-serif;
    font-size: 15px;
+   margin-bottom:10px;
+}
+
+h4{
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Logo */
+
+.logoImg{
+  clear:right;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:7px;
+} 
+
+i{
+  font-size:5vw;
+  color:#ed3434;
+  position:absolute;
+  top:35%;
+  left:95%;
+  transform: translate(-50%, -50%);
+
+}
+
+.logoDiv{
+  position:relative;
+}
+
+/* Nav Bar */
+
+.dropdown-menu{
+  width:100%;
+  overflow:hidden;
 }
 
 li a.nav-link {
@@ -32,107 +74,234 @@ li a:hover:not(.active) {
   font-family: Arial, sans-serif;
 }
 
+
 .active {
   background-color: #1aa3ff;
 }
 
+/* Footer */
+
 .footer {
    position: fixed;
-   left: 0;
-   bottom: 0;
+   bottom:0;
+   left:0;
    width: 100%;
-   height: 110px;
+   height: auto;
    background-color: #ed3434;
 }
 
-.home-table{
+/* Home Page */
+
+#homePageCard{
+  width:100%;
+  height:auto;
+  position:relative;
+  max-width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#homePageImage{
+  width:100%;
+  height:auto;
+  filter: brightness(50%);
+  margin-top:10px;
+  max-height:600px;
+}
+
+#homePageTextBox{
+  background-color: rgba(255,255,255, .2);
+  height:80%;
+  width:80%;
+  max-height:400px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+#homePageText{
+  opacity:1;
+  color:white;
+  font-family: Arial, sans-serif;
+  font-size: 3vmin;
+  text-align: center;
+  margin-top: 7%;
+}
+
+.homeInventoryContainer{
+  width:100%;
+  height:auto;
+  position:relative;
+  max-width: 1200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homeInventory{
   display: grid;
-  grid-template-columns:auto auto;
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr) );  
+  grid-gap: 2vw;
+  margin:4vw;
 }
 
-
-.home-table > div{
+.homeInventoryCard{
+  width:100%;
+  position:relative;
 }
 
-.table-img img{
-  width:300px;
+.homeInventoryImgs{
+  opacity:0.4;
+  width:100%;
   height:auto;
 }
-
-.dropdown-menu{
-  width:100%;
-  overflow:hidden;
-}
-
-#aboutus{
-  margin-left: 100px;
-  margin-right:100px;
-  font-family: Arial, sans-serif;
+.homeInventoryText{
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  color:black;
+  font-size:2.5vmin;
+}
+
+.homeInventoryCard:hover{
+  background-color: #ed3434;
+}
+
+.homeInventoryCard:hover .homeInventoryText{
+  font-weight: bold;
 }
 
 
-#contactus{
-  margin-left: 100px;
-  margin-right: 100px;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
-h4{
-  margin-left: 100px;
-  margin-right: 100px;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
+/* Inventory Page */
 
 .content{
     background: #fff;
-    max-width: 800px;
-    margin: 30px auto;
-    padding:  20px 30px;
+    padding: 30px 30px;
+    align-content: center;
+    margin-right: 30px;
+    margin-left:30px;
+    margin-bottom: 30px;
 }
 
 ul{
     list-style-type: none;
     padding: 0; 
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 20px 40px;
-}
-
-
-.heading-div{
-  height:60px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );    
+    grid-gap: 40px;
 }
 
 .card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+  width:auto;
+  height:auto;
+}
+
+.card:hover{
+  background-color:#ed3434;
+}
+
+.card:hover .listing-image{
+  filter:brightness(50%);
+}
+
+.card:hover .add-To-Cart{
+  opacity: 1;
+}
+
+.add-To-Cart:hover{
+  background-color:#ed3434;
+  color:black;
+  border-color:black;
+  transition:0.4s;
 }
 
 .listing-image{
   opacity:1;
   width: 100%;
   height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
 }
 
 .listing-name{
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
+  opacity: 1;
+  text-align: center;
+  font-size:18px;
+  padding-top: 5px;
+}
+
+.add-To-Cart{
+  opacity:0;
+  position:absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color:white;
+  background-color:rgba(255,255,255, .1);
+  text-align:center;
+  border:solid;
+  border-color:gray;
+  border-radius:8px;
+  padding:5px 5px;
+  border-width: 1px;
 }
 
-.card:hover .listing-image{
-  opacity:0.3;
+/* Contact Us Page */
+
+#contactUs{
+  display: flex;
+  justify-content: center;
+  width:auto;
 }
-.card:hover .listing-name{
-  opacity:1;
+
+@media only screen and (max-width:600px){
+  #contactUs{
+    display:grid;
+    grid-template-columns: auto;
+  }
+}
+
+#contactInfo{
+  text-align:center;
+  width:50vw;
+  max-width: 300px;
+  margin:20px;
+}
+
+#emailForm{
+  width:50vw;
+  max-width: 300px;
+  margin:20px;
+}
+
+input, textarea{
+  border: 1px solid black;
+}
+
+#submit:hover, #reset:hover{
+  background-color:#ed3434;
+  border-color:white;
+}
+
+.socialMedia{
+  margin-top: 40px;
+}
+
+.fa {
+  padding:10px;
+  font-size:30px;
+  width:40px;
+  text-align:center;
+  border-radius: 20%;
+  margin-right: 10px;
+}
+
+.fa:hover{
+  opacity: 0.7
 }

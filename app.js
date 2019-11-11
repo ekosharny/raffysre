@@ -11,24 +11,29 @@ function renderFridges(doc){
 	let div = document.createElement('div');
 	let img = document.createElement('img');
 	let name = document.createElement('h5');
+	//let addToCart = document.createElement('button');
 
 	li.setAttribute('data-id', doc.id);
 	li.className="item-class"
 	div.className = "card";
 	img.className="listing-image";
 	name.className="listing-name";
+	//addToCart.className="add-To-Cart";
+	//addToCart.type="button";
 	img.src = doc.data().img;
 	name.textContent = doc.data().name;
+	//addToCart.textContent = "Add to Cart?";
 
 	div.appendChild(img);
 	div.appendChild(name);
+	//div.appendChild(addToCart);
 
 	li.appendChild(div);
 
 	fridgeList.appendChild(li);
 }
 
-db.collection('refrigerators').get().then((snapshot) => {
+db.collection("refrigerators").get().then((snapshot) => {
 	snapshot.docs.forEach(doc => {
 		renderFridges(doc);
 	})
@@ -40,6 +45,7 @@ function renderIceMachines(doc){
 	let div = document.createElement('div');
 	let img = document.createElement('img');
 	let name = document.createElement('h5');
+	//let addToCart = document.createElement('button');
 
 	li.setAttribute('data-id', doc.id);
 	li.className="item-class"
@@ -48,9 +54,13 @@ function renderIceMachines(doc){
 	name.className="listing-name";
 	img.src = doc.data().img;
 	name.textContent = doc.data().name;
+	//addToCart.className="add-To-Cart";
+	//addToCart.textContent = "Add to Cart?";
+	//addToCart.type="button";
 
 	div.appendChild(img);
 	div.appendChild(name);
+	//div.appendChild(addToCart);
 
 	li.appendChild(div);
 
@@ -70,6 +80,7 @@ function renderFoodprep(doc){
 	let div = document.createElement('div');
 	let img = document.createElement('img');
 	let name = document.createElement('h5');
+	//let addToCart = document.createElement('button');
 
 	li.setAttribute('data-id', doc.id);
 	li.className="item-class"
@@ -78,9 +89,14 @@ function renderFoodprep(doc){
 	name.className="listing-name";
 	img.src = doc.data().img;
 	name.textContent = doc.data().name;
+	//addToCart.className="add-To-Cart";
+	//addToCart.textContent = "Add to Cart?";
+	//addToCart.type="button";
+
 
 	div.appendChild(img);
 	div.appendChild(name);
+	//div.appendChild(addToCart);
 
 	li.appendChild(div);
 
@@ -99,6 +115,7 @@ function renderStoves(doc){
 	let div = document.createElement('div');
 	let img = document.createElement('img');
 	let name = document.createElement('h5');
+	//let addToCart = document.createElement('button');
 
 	li.setAttribute('data-id', doc.id);
 	li.className="item-class"
@@ -107,9 +124,13 @@ function renderStoves(doc){
 	name.className="listing-name";
 	img.src = doc.data().img;
 	name.textContent = doc.data().name;
+	//addToCart.className="add-To-Cart";
+	//addToCart.textContent = "Add to Cart?";
+	//addToCart.type="button";
 
 	div.appendChild(img);
 	div.appendChild(name);
+	//div.appendChild(addToCart);
 
 	li.appendChild(div);
 
@@ -128,6 +149,7 @@ function renderSinks(doc){
 	let div = document.createElement('div');
 	let img = document.createElement('img');
 	let name = document.createElement('h5');
+	//let addToCart = document.createElement('button');
 
 	li.setAttribute('data-id', doc.id);
 	li.className="item-class"
@@ -136,9 +158,13 @@ function renderSinks(doc){
 	name.className="listing-name";
 	img.src = doc.data().img;
 	name.textContent = doc.data().name;
+	//addToCart.className="add-To-Cart";
+	//addToCart.textContent = "Add to Cart?";
+	//addToCart.type="button";
 
 	div.appendChild(img);
 	div.appendChild(name);
+	//div.appendChild(addToCart);
 
 	li.appendChild(div);
 
