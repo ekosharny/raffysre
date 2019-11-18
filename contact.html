@@ -78,20 +78,14 @@
       <br>
 
       <form id="emailForm" action="https://formspree.io/xayywvdl" target="_blank" method="post" enctype="multipart/form-data">
-        <label for="name">Name: </label>
-        <br>
-        <input type="text" name="name" id="name" size="25" ><br>
-        <label for="email">E-mail: </label>
-        <br>
-        <input type="text" name="email" id="email" size="25"><br>
-        <label for="telephone">Phone: </label>
-        <br>
-        <input type="text" name="telephone" id="telephone"size="25"><br>
-        <label for="inquiry">Inquiry: </label>
-        <br>
-        <textarea name="inquiry" id="inquiry" rows="2" cols="25" ></textarea><br>
-        <input id="submit" type="submit" value="Submit" style="border-radius: 10%">
-        <input id="reset" type="reset" value="Reset" style="border-radius: 10%">
+        <input type="text" name="name" placeholder="Name" id="name" size="25" ><br>
+        <input type="text" name="email" placeholder="E-mail" id="email" size="25"><br>
+        <input type="text" name="telephone" placeholder="Phone" id="telephone"size="25"><br>
+        <textarea name="inquiry" id="inquiry" placeholder="Your Inquiry" rows="2" cols="25" ></textarea><br>
+        <div class="formButtons">
+          <input id="submit" type="submit" value="Submit">
+          <input id="reset" type="reset" value="Reset">
+        </div>
       </form>
     </div>
 

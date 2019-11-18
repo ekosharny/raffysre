@@ -1,3 +1,7 @@
+html{
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
 /* Headings */
 h1{
 	color: #ed3434;
@@ -57,12 +61,13 @@ i{
 
 .dropdown-menu{
   width:100%;
-  overflow:hidden;
 }
+
 
 li a.nav-link {
   color: black;
   text-align: center;
+  transition: .5s;
 }
 
 li a:hover:not(.active) {
@@ -78,6 +83,7 @@ li a:hover:not(.active) {
 .active {
   background-color: #1aa3ff;
 }
+
 
 /* Footer */
 
@@ -130,26 +136,17 @@ li a:hover:not(.active) {
   margin-top: 7%;
 }
 
-.homeInventoryContainer{
-  width:100%;
-  height:auto;
-  position:relative;
-  max-width: 1200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .homeInventory{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr) );  
-  grid-gap: 2vw;
-  margin:4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .homeInventoryCard{
-  width:100%;
+  width:25vw;
+  max-width: 200px;
   position:relative;
+  margin:15px;
 }
 
 .homeInventoryImgs{
@@ -168,14 +165,17 @@ li a:hover:not(.active) {
   font-size:2.5vmin;
 }
 
-.homeInventoryCard:hover{
-  background-color: #ed3434;
+.homeInventoryCard:hover .homeInventoryImgs{
+  opacity:0.2;
 }
 
 .homeInventoryCard:hover .homeInventoryText{
   font-weight: bold;
 }
 
+.invSelection{
+  display: none;
+}
 
 /* Inventory Page */
 
@@ -267,6 +267,10 @@ ul{
   }
 }
 
+#contactUs{
+  margin-bottom: 20px;
+}
+
 #contactInfo{
   text-align:center;
   width:50vw;
@@ -277,16 +281,32 @@ ul{
 #emailForm{
   width:50vw;
   max-width: 300px;
-  margin:20px;
 }
 
 input, textarea{
   border: 1px solid black;
+  margin:10px 20px;
+  border-radius: 3px;
+}
+
+input:focus, textarea:focus{
+  border:1px solid #ed3434;
+  outline: 0 none;
+  box-shadow: 0 0 1px #ed3434 inset, 0 0 3px #ed3434;
+}
+
+#submit, #reset{
+  border-radius:3px;
+  transition: .5s;
 }
 
 #submit:hover, #reset:hover{
   background-color:#ed3434;
   border-color:white;
+}
+
+.formButtons{
+  display: flex;
 }
 
 .socialMedia{
