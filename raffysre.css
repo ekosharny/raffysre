@@ -67,7 +67,7 @@ i{
 li a.nav-link {
   color: black;
   text-align: center;
-  transition: .5s;
+  transition: .2s;
 }
 
 li a:hover:not(.active) {
@@ -140,13 +140,15 @@ li a:hover:not(.active) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .homeInventoryCard{
   width:25vw;
   max-width: 200px;
+  min-width:100px;
   position:relative;
-  margin:15px;
+  margin:10px;
 }
 
 .homeInventoryImgs{
@@ -154,7 +156,7 @@ li a:hover:not(.active) {
   width:100%;
   height:auto;
 }
-.homeInventoryText{
+.homeInventoryText, .invSelection{
   opacity: 1;
   position: absolute;
   top: 50%;
@@ -165,16 +167,38 @@ li a:hover:not(.active) {
   font-size:2.5vmin;
 }
 
+.invSelection{
+  display: none;
+}
+
 .homeInventoryCard:hover .homeInventoryImgs{
   opacity:0.2;
 }
 
 .homeInventoryCard:hover .homeInventoryText{
+  display:none;
+}
+
+.homeInventoryCard:hover .invSelection{
+  display:inline;
+}
+
+.homeInventoryCard:hover .selectionText{
+  color:black;
+  margin:20px 0px;
+  padding:10px;
+  font-size:2.5vmin;
+  border: 1px solid gray;
+  border-radius: 3px;
   font-weight: bold;
 }
 
-.invSelection{
-  display: none;
+.selectionText:hover{
+  opacity:0.5;
+}
+
+.invSelection a{
+  text-decoration: none;
 }
 
 /* Inventory Page */
