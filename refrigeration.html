@@ -3,6 +3,8 @@
 
   <head>
     <title>Raffy's Restaurant Equipment</title>
+    <link rel = "icon" href = "images/titleLogo.jpeg"> 
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -30,7 +32,6 @@
 
     <div class="logoDiv">
       <img class="logoImg" src = "images/logo.jpeg" width=120px height=auto>
-      <!--<a href="cart.html"><i class="fas fa-shopping-cart"></i></a>-->
     </div>
 
       <h1>RAFFY'S RESTAURANT EQUIPMENT</h1>
@@ -63,38 +64,12 @@
         </ul>
     </div>
 
-    <br>
     <h2>Refrigeration</h2>
-
-    <div class="content">
-      <ul id="fridge-list"></ul>
-    </div>
-
-    <br>
 
     <div class="footer">
       <h2>CALL (718)666-5669</h2>
       <h3>We are available 24 hours a day, 7 days a week!</h3>
     </div>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-      apiKey: "AIzaSyDhnLO6TeHT2_Cd2PF2j0mg-nF9RaPRaDA",
-      authDomain: "raffys-equipment.firebaseapp.com",
-      databaseURL: "https://raffys-equipment.firebaseio.com",
-      projectId: "raffys-equipment",
-      storageBucket: "raffys-equipment.appspot.com",
-      messagingSenderId: "630931630860",
-      appId: "1:630931630860:web:623b47b88b13e2c1"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      const db = firebase.firestore();
-      db.settings({timestampsInSnapshots: true });
-
-    </script>
-    <script src="app.js"></script>
 
   </body>
 </html>

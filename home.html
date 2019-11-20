@@ -28,9 +28,6 @@
 
 		<div class="logoDiv">
 			<img class="logoImg" src = "images/logo.jpeg" width=120px height=auto>
-			<!--
-			<a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-			-->
 		</div>
 
   		<h1>RAFFY'S RESTAURANT EQUIPMENT</h1>
@@ -80,14 +77,6 @@
 					</div>
 			</div>
 			<div class="homeInventoryCard">
-					<img class="homeInventoryImgs" src="images/inventory_imgs/4ftSandwichPrepTable .jpg">
-					<h5 class="homeInventoryText">View Sinks/Tables </h5>
-					<div class="invSelection">
-						<a href="sinks.html"><h5 class="selectionText">New</h5></a>
-						<a href="sinks.html"><h5 class="selectionText">Used</h5></a>
-					</div>
-			</div>
-			<div class="homeInventoryCard">
 					<img class="homeInventoryImgs" src="images/inventory_imgs/6burnerStoveRange.jpg">
 					<h5 class="homeInventoryText">View Stoves/Ovens </h5>
 					<div class="invSelection">
@@ -111,35 +100,14 @@
 						<a href="foodprep.html"><h5 class="selectionText">Used</h5></a>
 					</div>
 			</div>
+			<div class="homeInventoryCard">
+					<img class="homeInventoryImgs" src="images/inventory_imgs/4ftSandwichPrepTable .jpg">
+					<h5 class="homeInventoryText">View Sinks/Tables </h5>
+					<div class="invSelection">
+						<a href="sinks.html"><h5 class="selectionText">Used</h5></a>
+					</div>
+			</div>
 		</div>
-
-		<script>
-			function viewInv(i){
-				if($(window).width() <800 ){
-
-					let card = document.getElementsByClassName("homeInventoryCard");
-					let selection = document.getElementsByClassName("invSelection");
-					let text = document.getElementsByClassName("homeInventoryText"); 
-					let img = document.getElementsByClassName("homeInventoryImgs");
-
-					selection[i].style.display = 'inline';
-					text[i].style.display = 'none';
-					img[i].style.display = '0.2';
-/*
-					for(let j=0; j<card.length; j++){
-						if(j != i){
-							selection[i].style.display = 'none';
-							text[i].style.display = 'inline';
-							img[i].style.display = '0.4';
-						}
-					}
-					*/
-					
-				}
-
-			}
-
-		</script>
 
   		<div class="footer">
    			<h2>CALL (718)666-5669</h2>
