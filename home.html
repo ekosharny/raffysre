@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>Home</title>
+		<title>Raffy's Restaurant Equipment</title>
 		<link rel = "icon" href = "images/titleLogo.jpeg"> 
 
 		<meta charset="utf-8">
@@ -112,6 +112,34 @@
 					</div>
 			</div>
 		</div>
+
+		<script>
+			function viewInv(i){
+				if($(window).width() <800 ){
+
+					let card = document.getElementsByClassName("homeInventoryCard");
+					let selection = document.getElementsByClassName("invSelection");
+					let text = document.getElementsByClassName("homeInventoryText"); 
+					let img = document.getElementsByClassName("homeInventoryImgs");
+
+					selection[i].style.display = 'inline';
+					text[i].style.display = 'none';
+					img[i].style.display = '0.2';
+/*
+					for(let j=0; j<card.length; j++){
+						if(j != i){
+							selection[i].style.display = 'none';
+							text[i].style.display = 'inline';
+							img[i].style.display = '0.4';
+						}
+					}
+					*/
+					
+				}
+
+			}
+
+		</script>
 
   		<div class="footer">
    			<h2>CALL (718)666-5669</h2>

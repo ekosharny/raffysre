@@ -4,7 +4,7 @@ html{
 
 /* Headings */
 h1{
-	color: #ed3434;
+	color: #f02424;
 	font-family: "Arial Black", Gadget, sans-serif;
 	text-align: center;
   font-size:30px;
@@ -43,16 +43,6 @@ h4{
   margin-top:7px;
 } 
 
-i{
-  font-size:5vw;
-  color:#ed3434;
-  position:absolute;
-  top:35%;
-  left:95%;
-  transform: translate(-50%, -50%);
-
-}
-
 .logoDiv{
   position:relative;
 }
@@ -71,7 +61,7 @@ li a.nav-link {
 }
 
 li a:hover:not(.active) {
-  background-color: #ed3434;
+  background-color: #f02424;
   color:black;
 }
 
@@ -81,7 +71,7 @@ li a:hover:not(.active) {
 
 
 .active {
-  background-color: #1aa3ff;
+  background-color: #f02424;
 }
 
 
@@ -93,7 +83,7 @@ li a:hover:not(.active) {
    left:0;
    width: 100%;
    height: auto;
-   background-color: #ed3434;
+   background-color: #f02424;
 }
 
 /* Home Page */
@@ -120,11 +110,13 @@ li a:hover:not(.active) {
   background-color: rgba(255,255,255, .2);
   height:80%;
   width:80%;
-  max-height:400px;
   position:absolute;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #homePageText{
@@ -133,7 +125,6 @@ li a:hover:not(.active) {
   font-family: Arial, sans-serif;
   font-size: 3vmin;
   text-align: center;
-  margin-top: 7%;
 }
 
 .homeInventory{
@@ -152,53 +143,104 @@ li a:hover:not(.active) {
 }
 
 .homeInventoryImgs{
-  opacity:0.4;
+  opacity:0.3;
   width:100%;
   height:auto;
 }
+
 .homeInventoryText, .invSelection{
   opacity: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color:black;
-  font-size:2.5vmin;
 }
 
-.invSelection{
-  display: none;
-}
-
-.homeInventoryCard:hover .homeInventoryImgs{
-  opacity:0.2;
-}
-
-.homeInventoryCard:hover .homeInventoryText{
-  display:none;
-}
-
-.homeInventoryCard:hover .invSelection{
-  display:inline;
-}
-
-.homeInventoryCard:hover .selectionText{
-  color:black;
-  margin:20px 0px;
-  padding:10px;
-  font-size:2.5vmin;
-  border: 1px solid gray;
-  border-radius: 3px;
-  font-weight: bold;
-}
-
-.selectionText:hover{
-  opacity:0.5;
-}
 
 .invSelection a{
   text-decoration: none;
+}
+
+@media only screen and (min-width:800px){
+  .homeInventoryText, .invSelection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:2.5vmin;
+    width:60%;
+  }
+
+  .invSelection{
+    display: none;
+  }
+
+  .homeInventoryCard:hover .homeInventoryImgs{
+    opacity:0.2;
+  }
+
+  .homeInventoryCard:hover .homeInventoryText{
+    display:none;
+  }
+
+  .homeInventoryCard:hover .invSelection{
+    display:inline;
+  }
+
+  .homeInventoryCard:hover .selectionText{
+    color:black;
+    margin:20px 0px;
+    padding:10px;
+    font-size:2.5vmin;
+    border: 1px solid white;
+    background-color: rgba(255,255,255, .6);
+    border-radius: 3px;
+    font-weight: bold;
+  }
+
+  .selectionText:hover{
+    opacity:0.7;
+  }
+
+}
+
+@media only screen and (max-width:799px){
+  .homeInventoryCard{
+    width:40vw;      
+    min-width:100px;
+  }
+
+  .selectionText{
+    color:black;
+    margin:20px 0px;
+    padding:10px;
+    font-size:2.5vmin;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: rgba(255,255,255, .6);
+  }
+
+  .homeInventoryText{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:3vmin;  }
+
+  .invSelection{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+  }
+
+  .homeInventoryImgs{
+    opacity:0.3;
+  }
+
+  .selectionText:hover{
+    opacity:0.7;
+  }
+
 }
 
 /* Inventory Page */
@@ -227,7 +269,7 @@ ul{
 }
 
 .card:hover{
-  background-color:#ed3434;
+  background-color:#f02424;
 }
 
 .card:hover .listing-image{
@@ -239,7 +281,7 @@ ul{
 }
 
 .add-To-Cart:hover{
-  background-color:#ed3434;
+  background-color:#f02424;
   color:black;
   border-color:black;
   transition:0.4s;
@@ -314,18 +356,17 @@ input, textarea{
 }
 
 input:focus, textarea:focus{
-  border:1px solid #ed3434;
+  border:1px solid #f02424;
   outline: 0 none;
-  box-shadow: 0 0 1px #ed3434 inset, 0 0 3px #ed3434;
+  box-shadow: 0 0 1px #f02424 inset, 0 0 3px #f02424;
 }
 
 #submit, #reset{
   border-radius:3px;
-  transition: .5s;
 }
 
 #submit:hover, #reset:hover{
-  background-color:#ed3434;
+  background-color:#f02424;
   border-color:white;
 }
 
@@ -342,10 +383,11 @@ input:focus, textarea:focus{
   font-size:30px;
   width:40px;
   text-align:center;
+  border:1px solid #f02424;
   border-radius: 20%;
   margin-right: 10px;
 }
 
 .fa:hover{
-  opacity: 0.7
+  opacity: 0.4;
 }
