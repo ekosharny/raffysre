@@ -1,36 +1,38 @@
-html{
-  font-family: "Arial Black", Gadget, sans-serif;
-}
-
 /* Headings */
 h1{
 	color: #f02424;
-	font-family: "Arial Black", Gadget, sans-serif;
 	text-align: center;
   font-size:30px;
+  font-family: 'Raleway', sans-serif;
 }
 
 h2{
    color: black;
    text-align: center;
-   font-family: "Arial Black", Gadget, sans-serif;
    font-size: 25px;
    margin-top: 30px;
+   font-family: 'Raleway', sans-serif;
 }
 
 h3{
 	color: black;
    text-align: center;
-   font-family: Arial, sans-serif;
    font-size: 15px;
    margin-bottom:10px;
+   font-family: 'Raleway', sans-serif;
 }
 
 h4{
   margin-left: 100px;
   margin-right: 100px;
-  font-family: Arial, sans-serif;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+h5{
+  font-size:10px;
+  color:gray;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Logo */
@@ -66,7 +68,7 @@ li a:hover:not(.active) {
 }
 
 .container{
-  font-family: Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -77,13 +79,34 @@ li a:hover:not(.active) {
 
 /* Footer */
 
+footer{
+  padding-left: 5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer .socialMedia{
+  margin:10px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+footer .fa{
+  width:40px;
+  padding:10px;
+  font-size:15px;
+}
+
 .footer {
-   position: fixed;
+   position: sticky;
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   background-color: #f02424;
    bottom:0;
    left:0;
-   width: 100%;
-   height: auto;
-   background-color: #f02424;
+   padding-bottom: 3px;
+   font-family: 'Raleway', sans-serif;
 }
 
 /* Home Page */
@@ -122,16 +145,15 @@ li a:hover:not(.active) {
 #homePageText{
   opacity:1;
   color:white;
-  font-family: Arial, sans-serif;
   font-size: 3vmin;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .homeInventory{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 80px;
 }
 
 .homeInventoryCard{
@@ -152,6 +174,7 @@ li a:hover:not(.active) {
   opacity: 1;
   text-align: center;
   color:black;
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -193,6 +216,7 @@ li a:hover:not(.active) {
     border: 1px solid white;
     background-color: rgba(255,255,255, .6);
     border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
   }
 
   .selectionText:hover{
@@ -215,6 +239,7 @@ li a:hover:not(.active) {
     border: 1px solid white;
     border-radius: 3px;
     background-color: rgba(255,255,255, .6);
+    font-family: 'Raleway', sans-serif;
   }
 
   .homeInventoryText{
@@ -244,78 +269,6 @@ li a:hover:not(.active) {
 
 /* Inventory Page */
 
-.content{
-    background: #fff;
-    padding: 30px 30px;
-    align-content: center;
-    margin-right: 30px;
-    margin-left:30px;
-    margin-bottom: 30px;
-}
-
-ul{
-    list-style-type: none;
-    padding: 0; 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );    
-    grid-gap: 40px;
-}
-
-.card{
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
-  width:auto;
-  height:auto;
-}
-
-.card:hover{
-  background-color:#f02424;
-}
-
-.card:hover .listing-image{
-  filter:brightness(50%);
-}
-
-.card:hover .add-To-Cart{
-  opacity: 1;
-}
-
-.add-To-Cart:hover{
-  background-color:#f02424;
-  color:black;
-  border-color:black;
-  transition:0.4s;
-}
-
-.listing-image{
-  opacity:1;
-  width: 100%;
-  height: auto;
-}
-
-.listing-name{
-  opacity: 1;
-  text-align: center;
-  font-size:18px;
-  padding-top: 5px;
-}
-
-.add-To-Cart{
-  opacity:0;
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  font-size: 18px;
-  color:white;
-  background-color:rgba(255,255,255, .1);
-  text-align:center;
-  border:solid;
-  border-color:gray;
-  border-radius:8px;
-  padding:5px 5px;
-  border-width: 1px;
-}
 
 /* Contact Us Page */
 
@@ -341,11 +294,13 @@ ul{
   width:50vw;
   max-width: 300px;
   margin:20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 #emailForm{
   width:50vw;
   max-width: 300px;
+  font-family: 'Raleway', sans-serif;
 }
 
 input, textarea{
@@ -367,6 +322,7 @@ input:focus, textarea:focus{
 #submit:hover, #reset:hover{
   background-color:#f02424;
   border-color:white;
+  color:white;
 }
 
 .formButtons{
